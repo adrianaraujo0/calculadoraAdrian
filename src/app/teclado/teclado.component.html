@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <input class="form-control" type="text" disabled="disabled" readonly="readonly" name="resultado" [value]="resultado"/>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="col-12">
+    <form>
+      <div class="row mt-3">
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('7')">7</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('8')">8</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('9')">9</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-warning btn-lg" (click)="preencheResultado('/')">÷</button>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('4')">4</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('5')">5</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('6')">6</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-warning btn-lg" (click)="preencheResultado('*')">x</button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('1')">1</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('2')">2</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('3')">3</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-warning btn-lg" (click)="preencheResultado('-')">-</button>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-light btn-lg" (click)="limpar()">C</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-secondary btn-lg" (click)="preencheResultado('0')">0</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-warning btn-lg" (click)="avaliaResultado()">=</button>
+        </div>
+        <div class="col-3 d-grid">
+          <button type="button" class="btn btn-warning btn-lg" (click)="preencheResultado('+')">+</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<br/>
