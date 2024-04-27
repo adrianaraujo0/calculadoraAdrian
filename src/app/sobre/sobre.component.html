@@ -1,19 +1,24 @@
-<div class="container">
-  <div class="d-flex justify-content-center align-items-center" style="height: 5vh;">
-    <button (click)="toggleAbout()" class="btn btn-dark">sobre</button>
-  </div>
-  <br>
-  <div *ngIf="showAboutInfo">  
+<div class="d-flex justify-content-center align-items-center" style="height: 5vh;">
+  <button (click)="toggleAbout()" class="btn btn-dark">sobre</button>
+</div>
+<br />
+<div *ngIf="showAboutInfo">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-6 order-1 order-lg-0">
+      <div class="col-md-3 col-9">
         <p>Turma: <span class="turma">ADS0304N</span></p>
         <p>Turno: <span class="turno">Noite</span></p>
         <p>Unidade: <span class="unidade">Bonsucesso</span></p>
       </div>
-      <div class="col-lg-1 col-md-1 col-2 col-6 order-2 order-lg-0">
-        <img src="assets/img/adrian.png" class="img-fluid" alt="Foto"/>
+      <div  class="col-md-3 col-1">
       </div>
-      <div class="col-lg-2 offset-lg-6 col-md-3 offset-md-4 col-4 offset-2 col-12 order-3 order-lg-0">
+      <div class="col-md-1 col-2">
+        <img src="assets/img/adrian.png" class="img-fluid" style="max-width: 90px; height: auto;" alt="Foto do aluno" />
+      </div>
+      <div  class="col-md-3">
+      </div>
+      <div
+        class="col-md-2 col-12 text-center">
         <p>
           Nome: <span class="nome">Ádrian Henrique de Araújo</span>
         </p>
