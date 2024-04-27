@@ -19,7 +19,7 @@ export class TecladoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public preencheResultado(caractere:string){
+  public preencher(caractere:string){
     if(this.validacao.ehValidaExpressao(caractere, this.resultado)){
       this.resultado += caractere;
     }
@@ -30,7 +30,7 @@ export class TecladoComponent implements OnInit {
     this.resultado="";
   }
 
-  public avaliaResultado(){
+  public avaliar(){
     this.resultado = eval(this.resultado)+"";
   }
 }
