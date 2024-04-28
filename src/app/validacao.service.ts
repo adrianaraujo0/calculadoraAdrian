@@ -8,8 +8,8 @@ export class ValidacaoService {
   public turma = "ADS0304N"
   public turno = "noite"
   public unidade = "Bonsucesso"
-  public foto = "assets/img/pedro.jpg"
-  public aluno = "Pedro Henrique Do Nascimento Nunes"
+  public foto = "assets/img/adrian.png"
+  public aluno = "Ádrian Henrique de Araújo"
 
   constructor() { }
 
